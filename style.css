@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.container-haut{
+    display: flex;
+    height: 1078px;
+    padding-left: 114px;
+}
+/*---------------NAVIGATION---------------*/
+/*----------BLOC HAUT----------*/
+nav{
+    background-color: #DDD4C6;
+    height: 100%;
+    left:0;
+    position: fixed;
+    width: 114px;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-0.25turn);
+}
+nav li{
+    margin: 0 60px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 32px;
+    color: #3F2502;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #DDD4C6;
+}
+nav a:hover{
+    border-bottom: 2px solid #3F2502;
+    cursor: pointer;
+}
+.menu-barre{
+    border-bottom: 2px solid #3F2502;
+}
+.my-button{
+    background-color: transparent;
+    width: 50px;
+    cursor: pointer;
+    margin: 10px 5% 10px 5%;
+    border: none;
+    display: none;
+}
+.my-button img {
+    width:100%;
+    object-fit: cover;
+}
+.my-button:focus{
+    outline: none;
+}
+.home-gauche h2{
+    color: #3F2502;
+}
+
+/*----------------RESPONSIVE 1024PX------------------*/
+@media screen and (max-width: 1024px){
+    nav{
+        width: 80px;
+    }
+}
+/*--------RESPONSIVE 320PX------------------------*/
+@media screen and (max-width: 418px){
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        transform: rotate(0);
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .my-button{
+        display: block;
+    }
+    nav {
+        width:100%;
+        height:340px;
+    }
+}
+
+/*------------------BLOC CONTAINER HOME--------------------*/
+.home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+/*-------------------BLOC GAUCHE------------------*/
+.home-gauche{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #3F2502;
+}
+.home-gauche h1{
+    margin-left: 124px;
+    margin-top: 152px;
+    text-transform: uppercase;
+    color: #DDD4C6;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+.home-gauche h2{
+    font-family: 'Playfair Display', serif;
+    margin-left: 124px;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.home-gauche p{
+    margin-left: 124px;
+    margin-top: 60px;
+    margin-right: 124px;
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+/*-------------------BLOC DROIT------------------*/
+.home-droite{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: aqua;
+}
+.home-droite-reseaux{
+    margin-top: 152px;
+    text-align: right;
+    margin-right: 228px;
+}
+.home-droite-reseaux img{
+    padding-left: 65px;
+    
+}
+.home-droite-img{
+    text-align: right;
+    margin-right: 228px;
+}
+.home-droite-img img{
+    margin-top: 150px;
+}
+
+/*--------------RESPONSIVE---------------*/
+@media screen and (max-width: 1580px){
+    .home-gauche h1{
+        font-size: 35px;
+    }
+    .home-gauche h2{
+        font-size: 30px;
+    }
+    .home-gauche p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .home-gauche h1{
+        font-size: 28px;
+    }
+    .home-gauche h2{
+        font-size: 25px;
+        margin-top: 80px;
+    }
+    .home-gauche p{
+        font-size: 20px;
+    }
+    .home-droite-reseaux img{
+       height: 2.5vw;
+       background-color: aquamarine;
+       padding-left: 4vw;
+    }
+    .home-droite-img img{
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .home-gauche h1{
+        margin-left: 10px;
+    }
+    .home-gauche h2{
+        margin-left: 10px;
+    }
+    .home-gauche p{
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+}
+
+/*----------BLOC BAS----------*/
+.container-bas{
+    display: flex;
+    gap: 114px;
+    padding-right: 114px;
+    padding-left: 114px;
+}
+.bloc-gauche-img img{
+    top: 1143px;
+    margin-left: 114px;
+    width: 589px;
+    height: 839px;
+    border: 3px solid #DDD4C6;
+    border-radius: 89px;
+    margin-bottom: 50px;
+}
+.cbg-boutons{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding-block: 30px;
+}
+.cbg-boutons button{
+    border: 3px solid #DDD4C6;
+    width: 254px;
+    height: 100px;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border-radius: 33px;
+    background-color: white;
+    margin-right: 40px;
+}
+.container-bas h2{
+    font-size: 40px;
+    color: #3F2502;
+    font-family: 'Playfair Display', serif;
+}
+.container-bas p{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+.cbg-skills{
+    /*voir pour bien placer skills*/
+    padding-top: 405px;
+}
+
+/*-------FOOTER-------*/
+footer{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid #DDD4C6;
+    padding-block: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #3F2502;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:hover{
+    border-bottom: 3px solid #3F2502;
+    cursor: pointer;
+}
+
+/* Container images works */
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: #3F2502; */
+}
+.container-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 406px;
+  height: 435px;
+  margin: 30px; 
+  overflow: hidden; /* cache ce qui déborde du container */
+  /* border: 1px solid #ee0606; */
+}
+
+.container-image img{
+    width: 100%;
+    height: 409px;
+    object-fit: cover;
+    border-radius: 43px;
+    border: 1px solid #ADA193;
+}
+
+.legende {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Répartir sur toute la largeur */
+    padding:0 14px;
+    align-items: center;
+    width: 100%;
+    height: 28px;
+    /* background-color: #ed05c6; */
+    color: white;
+    box-sizing: border-box;
+  }
+  .legende-text {
+    font: normal normal bold 30px/40px Playfair Display;
+    color: #3F2601;
+    height: 40px;
+  }
+  .legende-button {
+    border-radius: 8px;
+    border:2px solid #ADA193;
+    background: #FFFFFF;
+    height:28px;
+    width:115px;
+    font: normal normal normal 20px/25px Quicksand;
+    cursor: pointer;
+  }
+
+ #modal-container { /* arrière plan sombre*/
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    
+  }
+  
+  #modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 3px solid #ADA193;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 33px;
+  }
+  
+  #modal-content .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  #modal-content h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  #modal-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  #modal-content img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 44px;
+  }
+  
+  .closefleche {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #modal-title {
+  display: inline-block;
+}
+
+#pomme-content {
+    display: none;
+}
+.legende-button.more::after {
+    content: " >";
+}
+.legende-button.less::after {
+    content: " <";
+}

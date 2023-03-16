@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Works</title>
+</head>
+    <body>    
+        <div class="container-haut">
+            <nav>
+                <button class="my-button" id="my-button">
+                    <img src="image/p1/burger.svg" alt="icone menu burger">
+                </button>
+                <ul id="my-nav">
+                    <li> <a href="" class="menu">contact</a></li>
+                    <li> <a href="" class="menu-barre">works</a></li>
+                    <li> <a href="" class="menu">home</a></li>
+                </ul>                   
+            </nav>
+            <div class="works">
+                <div class="container-image" id="pomme">
+                    <img class="image" src="image/p2/Vinyles/pomme/pomme1.png" alt="" />
+                    <img class="image" src="image/p2/Vinyles/pomme/pomme2.png" alt="" />
+                    <div class="legende">
+                        <div class="legende-text">Pomme - Vinyle</div>
+                        <button class="legende-button" 
+                           data-title="Vinyle Pomme" 
+                           data-description="Description de Vinyle Pomme." 
+                           data-image="image/p2/Vinyles/pomme/pomme1.png"
+                           data-image2="image/p2/Vinyles/pomme/pomme2.png"
+                           >More</button>
+                    </div>
+                </div>
+                <div class="container-image">
+                    <img class="image" src="image/p2/print/magazine/esthetic.png" alt="" />
+                    <div class="legende">
+                        <div class="legende-text">Blah</div>
+                        <button class="legende-button" 
+                           data-title="Vinooooole Pomme" 
+                           data-description="Description de Vinyle Pomme." 
+                           data-image="image/p2/Vinyles/pomme/pomme2.png"
+                           >More</button>
+                    </div>
+                </div>
+                <div class="container-image">
+                    <img class="image" src="image/p2/mockups/michelange/Mockup_CARD.jpg" alt="" />
+                    <div class="legende">
+                        <div class="legende-text">Blih</div>
+                        <button class="legende-button" 
+                           data-title="Vinyle Pomme" 
+                           data-description="Description de Vinyle Pomme." 
+                           data-image="image/p2/Vinyles/pomme/pomme1.png"
+                           >More</button>
+                    </div>
+                </div>
+                <div class="container-image">
+                    <img class="image" src="image/p1/CV.jpg" alt="" />
+                    <div class="legende">
+                        <div class="legende-text">Blah</div>
+                        <button class="legende-button" 
+                           data-title="Vinyle Pomme" 
+                           data-description="Description de Vinyle Pomme." 
+                           data-image="image/p2/Vinyles/pomme/pomme1.png"
+                           >More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Le code HTML pour afficher un modal centré au milieu de l'écran -->
+            <div id="modal-container">
+                <div id="modal-content">
+                    <div class="modal-legend">
+                        <span class="closefleche">←</span>
+                        <h1 id="modal-title"></h1>
+                        <p id="modal-description"></p>
+                    </div>
+                    <img id="modal-image" src="" alt="Vinyle" />
+                </div>
+            </div>
+        </div>   
+        <!-- fin container haut  -->
+        <footer>
+            <ul id="mention-legale">
+                <li> <a href="" class="mention-legale">LEGAL NOTICE</a></li>
+        </footer>
+    </body>
+    <script src="app.js"></script>
+</html> 

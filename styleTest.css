@@ -1,0 +1,65 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Ici : on privilégie hsl pour avoir des couleurs à partir d'une couleur
+  de base 256 = violet 
+  hsl(Hue,Saturation,Lightness)
+  */
+  --hue: 256;
+  --first-color: hsl(var(--hue), 16%, 18%);
+  --first-color-alt: hsl(var(--hue), 16%, 12%);
+  --title-color: hsl(var(--hue), 8%, 15%);
+  --text-color: hsl(var(--hue), 8%, 35%);
+  --body-color: hsl(var(--hue), 100%, 88%);
+  --container-color: #FFF;
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  /*========== z index ==========*/
+  --z-modal: 1000;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+      --big-font-size: 1.75rem; /* 1.75x la taille de l'élément root  */
+      --normal-font-size: 1rem;
+    }
+  }
+
+/*=============== BASE ===============*/
+/* réglages globaux */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* polices */
+body,
+button{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+  /* couleur, fond body */
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    position: relative;
+  }
+
+  button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+/*=============== MODAL ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
