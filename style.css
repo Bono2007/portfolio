@@ -346,7 +346,7 @@ footer a:hover{
   
   #modal-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #fefefe;
     margin: 5% auto;
@@ -380,13 +380,25 @@ footer a:hover{
   }
   
   #modal-content img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 44px;
+    border-radius: 20px;
+  }
+
+  #modal-container-video {
+    text-align: center;
   }
   
+  #modal-video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
   .closefleche {
     display: inline-block;
     font-size: 32px;
