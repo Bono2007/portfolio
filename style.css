@@ -12,7 +12,6 @@ body{
 }
 .container-haut{
     display: flex;
-    height: 1078px;
     padding-left: 114px;
 }
 /*---------------NAVIGATION---------------*/
@@ -74,26 +73,35 @@ nav a:hover{
 @media screen and (max-width: 1024px){
     nav{
         width: 80px;
+
     }
 }
 /*--------RESPONSIVE 320PX------------------------*/
-@media screen and (max-width: 418px){
+@media screen and (max-width: 375px){
+    nav {
+        width:100%;
+        height:150px;
+    }
+
     nav ul{
-        display: none;
+        /* display: none; */
         flex-direction: column;
-        width: 100%;
+        height:20%;
         transform: rotate(0);
     }
-    nav ul.show {
-        display: flex;
+    nav ul a {
+        font-size:22px;
     }
+    nav ul.show {
+        /* display: flex;  */
+    }
+    nav li {
+        margin: 0px 10px;
+      }
     .my-button{
         display: block;
     }
-    nav {
-        width:100%;
-        height:340px;
-    }
+    
 }
 
 /*------------------BLOC CONTAINER HOME--------------------*/
@@ -275,6 +283,21 @@ footer a:hover{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 375px) {
+    footer {
+      height: 44px;
+    }
+    #mention-legale {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .mention-legale {
+      font-size: 14px;
+    }
+  }
+
 /* Container images works */
 .works{
     display: flex;
@@ -410,12 +433,3 @@ footer a:hover{
   display: inline-block;
 }
 
-#pomme-content {
-    display: none;
-}
-.legende-button.more::after {
-    content: " >";
-}
-.legende-button.less::after {
-    content: " <";
-}

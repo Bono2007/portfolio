@@ -1,19 +1,19 @@
-function showImage(button) {
-    const imageSrc = button.getAttribute('data-image'); //Transforme l'image en bouton
-    const overlay = document.querySelector('.overlay');
-    const overlayImage = document.querySelector('.overlay-image');
-    overlay.addEventListener('click', hideImage);  //Ajoute un écouteur d'événement qui va lancer la fonction hideImage() au clic
+// function showImage(button) {
+//     const imageSrc = button.getAttribute('data-image'); //Transforme l'image en bouton
+//     const overlay = document.querySelector('.overlay');
+//     const overlayImage = document.querySelector('.overlay-image');
+//     overlay.addEventListener('click', hideImage);  //Ajoute un écouteur d'événement qui va lancer la fonction hideImage() au clic
     
-    overlayImage.src = imageSrc;
-    overlay.classList.add('show');
-    overlay.classList.remove('hide');
-  }
+//     overlayImage.src = imageSrc;
+//     overlay.classList.add('show');
+//     overlay.classList.remove('hide');
+//   }
 
-  function hideImage() {
-    const overlay = document.querySelector('.overlay');
-    overlay.classList.add('hide');
-    overlay.classList.remove('show');
-  }
+//   function hideImage() {
+//     const overlay = document.querySelector('.overlay');
+//     overlay.classList.add('hide');
+//     overlay.classList.remove('show');
+//   }
 
   // Le JavaScript pour afficher ou cacher le modal
 const modal = document.getElementById("modal-container");
