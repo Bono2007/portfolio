@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+    <body>    
+        <div class="container-haut">
+            <nav>
+                <button class="my-button" id="my-button">
+                    <img src="image/p1/burger.svg" alt="icone menu burger">
+                </button>
+                <ul id="my-nav">
+                    <li> <a href="contact.html" class="menu-barre">contact</a></li>
+                    <li> <a href="works.html" class="menu">works</a></li>
+                    <li> <a href="index.html" class="menu">home</a></li>
+                </ul>                   
+            </nav>
+            <div class="home">
+                <div class="home-gauche">
+                    <h1>Contact</h1>
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi impedit error aliquid distinctio voluptatibus vero voluptatum pariatur reprehenderit sed repudiandae. Laboriosam magni totam culpa ipsa, consectetur neque aut nulla voluptatibus.             </div>
+                <div class="home-droite">
+                    
+                    <div class="home-droite-reseaux">
+                        <a target="_blank" href="https://www.instagram.com/_jusquauxdesigns_/"><img src="image/p1/iconeinstagram.svg" alt="icone instagram"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/emma-lassalle-carrère-326563230/"><img src="image/p1/iconelinkedin.svg" alt="icone linkedin"></a>
+                        <a href="mailto:elassallecarrere@gmail.com"><img src="image/p1/iconemail.svg" alt="icone mail"></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCd2WOgYVbbvu-rNifwbYWTw"><img src="image/p1/iconeyoutube.svg" alt="icone youtube"></a>
+                    </div>
+                    <div class="home-droite-formulaire">
+                        <!-- Formulaire -->
+                        <form action="mailto:emma.lassallecarrere@gmail.com" method="post" enctype="text/plain">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                            <input type="hidden" name="subject" value="Formulaire de contact">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul id="mention-legale">
+                <li> <a href="mention.html" class="mention-legale">LEGAL NOTICE</a></li>
+        </footer>
+    </body>
+    <script src="app.js"></script>
+</html> 

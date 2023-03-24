@@ -116,7 +116,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: #3F2502;
 }
 .home-gauche h1{
     margin-left: 124px;
@@ -148,7 +147,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: aqua;
 }
 .home-droite-reseaux{
     margin-top: 152px;
@@ -231,12 +229,12 @@ nav a:hover{
     margin-bottom: 50px;
 }
 .cbg-boutons{
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     padding-block: 30px;
 }
 .cbg-boutons button{
+    cursor: pointer;
     border: 3px solid #DDD4C6;
     width: 254px;
     height: 100px;
@@ -247,6 +245,11 @@ nav a:hover{
     background-color: white;
     margin-right: 40px;
 }
+
+.cbg-boutons button:hover {
+    background-color: #f1c40f;
+}
+
 .container-bas h2{
     font-size: 40px;
     color: #3F2502;
@@ -316,7 +319,6 @@ footer a:hover{
   height: 435px;
   margin: 30px; 
   overflow: hidden; /* cache ce qui déborde du container */
-  /* border: 1px solid #ee0606; */
 }
 
 .container-image img{
@@ -331,12 +333,10 @@ footer a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Répartir sur toute la largeur */
-    padding:0 14px;
+    padding:0 0px;
     align-items: center;
     width: 100%;
     height: 28px;
-    /* background-color: #ed05c6; */
-    color: white;
     box-sizing: border-box;
   }
   .legende-text {
@@ -433,3 +433,69 @@ footer a:hover{
   display: inline-block;
 }
 
+/* Contact */
+
+.home-droite-formulaire {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home-droite-formulaire input[type="text"],
+.home-droite-formulaire textarea {
+    display: block;
+    width: 100%;
+    max-width: 765px;
+    border-radius: 33px;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.home-droite-formulaire input[type="text"] {
+    height: 91px;
+}
+
+.home-droite-formulaire textarea {
+    height: 296px;
+    resize: none;
+}
+
+.home-droite-formulaire button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 33px;
+    cursor: pointer;
+    background-color: #aaa;
+    color: white;
+    border: none;
+    float: right;
+}
+
+/* Legal Notice */
+.mention {
+    padding: 20px;
+}
+
+.legal-notice h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.legal-notice p {
+    margin-bottom: 20px;
+}
+
+.legal-notice a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.legal-notice a:hover {
+    text-decoration: underline;
+}
